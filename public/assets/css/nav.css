@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+/* CSS NAVBAR */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    
+    width: 100%;
+    background-color: white;
+    font-size: 20px;
+    display: flex;
+}
+
+.wrapping{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    width: 100%;
+    height: 70px;
+    color: white;
+    background-color: black;
+}
+
+.brands{
+
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    font-size: 1.5em;
+   
+}
+
+.firstname{
+    display: flex;
+    flex-direction: row;
+    color: yellow;
+    font-weight: 900px;
+}
+
+.lastname{
+    font-weight: 800px;
+    margin-left: 4px;
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.navigation li{
+    list-style: none;
+    padding: 15px;
+}
+.navigation li, a{
+    text-decoration: none;
+    color: white;
+}
+
+.navigation l, a:hover{
+    color: yellow;
+    transition: all .4s ease-in-out;
+}
+
+.active{
+    background-color: yellow;
+    background-size: 100px;
+    color: black !important;
+    padding: 15px;
+    border-radius: 220px;   
+}
+
+.icon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.icon li{
+    padding: 10px;
+    list-style: none;
+}
+
+/* END CSS NAVBAR */
+
+/* Styling Footer */
+ .footer {
+    justify-content: center;
+    padding: 10px;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    height: 30px;
+    background-color: yellow;
+ }
+
+ /* END styling footer */
+  
+/* Style Home */
+.home {
+    display: grid;
+    place-items: center;
+  }
+  
+.home img{
+    position: relative;
+    margin-top: 130px;
+    height: 250px;
+    width: 250px;
+}
+
+.home img:hover{
+    height: 300px;
+    width: 300px;
+    transition: all .04 ease-in-out;
+}
+
+/* END HOME */
+
+/* About */
+
+.about {
+    justify-content: center;
+    text-align: center;
+}
+
+.about img{
+    margin-top: 30px;
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+}
+.about h1{
+    margin-top: 10px;
+}
+
+.about p {
+    text-align: center;
+    line-height: 1.5;
+    max-width: 800px;
+    margin: auto;
+    margin-top: 5px;
+}
+
+/* End about */
+
+/* Experience */
+.pure-table{
+  
+    display: grid;
+    place-items: center;
+    padding-top: 10px;
+}
+.pure-table thead{
+    padding: 15px;
+}
+
+/* Responsve breakpoint */
+
+/* HP */
+@media (max-width: 500px) {
+    .container {
+        flex-direction: column;
+    }
+  
+    .wrapping {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 10px;
+    }
+  
+    .brands {
+        display: none;
+
+    }
+  
+    .navigation {
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    .icon {
+        display: none;
+
+    }
+  
+    .home img {
+        margin-top: 80px;
+        height: 200px;
+        width: 200px;
+    }
+  
+    .about img {
+        margin-top: 20px;
+        height: 150px;
+        width: 150px;
+    }
+    .about h1{
+        font-size: 20px;
+    }
+    .about p {
+        font-size: 16px;
+        margin-bottom: 20px;
+        
+    }
+    
+    .footer{
+        height: auto;
+    }
+}
+
+
+/* Tablet */
+@media (min-width: 750px) and (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+    }
+  
+    .wrapping {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 10px;
+    }
+  
+    .brands {
+        display: none;
+       
+    }
+    .firstname{
+        display: none;
+    }
+    
+    .navigation {
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    .icon {
+        justify-content: center;
+    }
+  
+    .home img {
+        margin-top: 100px;
+        height: 250px;
+        width: 250px;
+    }
+  
+    .about img {
+        margin-top: 30px;
+        height: 180px;
+        width: 180px;
+    }
+  
+    .about p {
+        font-size: 18px;
+    }
+    
+}
+
+
+

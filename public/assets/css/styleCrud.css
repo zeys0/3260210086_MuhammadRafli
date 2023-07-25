@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header{
+    width: 100%;
+    height: 70px;
+    font-size: 20px;
+    font-weight: 100px;
+    background-color: tomato;
+    padding: 15px;
+}
+
+.title h1{
+    letter-spacing: 2px;
+}
+
+.title,
+.table,
+.form{
+    margin: 20px;
+    padding: 20px;
+    background-color: transparent;
+    border-radius: 5px;
+}
+
+
+.title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.title a, button{
+    background-color:#28a745;
+    padding: 10px;
+    font-size: 10px;
+    font-weight: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+    
+}
+
+.title a, button:hover{
+    background-color: #46b765;
+    transition: all 0.5 ease-in-out;
+
+}
+
+.action{
+    display: flex;
+    justify-content: center;
+}
+
+/* TABEL */
+
+.table table{
+    width : 100%;
+    font-size: 20px;
+   
+}
+
+.table table tr th,
+.table table tr td{
+    padding:15px;
+}
+
+/* end tabel */
+
+ /*form  */
+
+ .form form input{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border-radius: 20px;
+    height: 20px;
+    margin-left: 15%;
+    width: 35%;
+ }
+
+ label{
+    font-size: 15px;
+    letter-spacing: 5px;
+    float: left;
+    margin-bottom: 5px;
+    margin-top: 10px;
+ }
+
+ input{
+    margin-bottom: 5px;
+ }
+
+ .button-form{
+    padding: 5px;
+    margin-left: 15%;
+    border-radius: 50px;
+   
+ }
+
+ /* end form */
